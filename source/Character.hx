@@ -129,6 +129,27 @@ class Character extends FlxSprite
 				//loadOffsetFile(curCharacter);
 
 				playAnim('idle');
+			case 'hhgreggPixel':
+				// HHGREGG ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('hhgreggPixel','shared',true);
+				frames = tex;
+				animation.addByPrefix('idle', 'hhgreggPixel idle', 24, false);
+				animation.addByPrefix('singUP', 'hhgreggPixel sing up', 24, false);
+				animation.addByPrefix('singRIGHT', 'hhgreggPixel sing right', 24, false);
+				animation.addByPrefix('singDOWN', 'hhgreggPixel sing down', 24, false);
+				animation.addByPrefix('singLEFT', 'hhgreggPixel sing left', 24, false);
+
+				var _xoff = 0;
+				var _yoff = 0;
+				addOffset('idle',_xoff,_yoff);
+				addOffset('singUP', 39+_xoff, 2+_yoff);
+				addOffset('singRIGHT', _xoff, _yoff);
+				addOffset('singDOWN', _xoff, 4+_yoff);
+				addOffset('singLEFT', 53+_xoff, -15+_yoff);
+				//loadOffsetFile(curCharacter);
+
+				playAnim('idle');
+				antialiasing = false;
 			case 'redface':
 				// HHGREGG ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('redface','shared',true);

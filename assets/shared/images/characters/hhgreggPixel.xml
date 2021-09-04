@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="hhgreggPixel.png"><SubTexture name="hhgreggPixel idle0000" x="0" y="0" width="512" height="870" frameX="0" frameY="0" frameWidth="512" frameHeight="870" />
+<SubTexture name="hhgreggPixel idle0001" x="512" y="0" width="512" height="870" frameX="0" frameY="0" frameWidth="512" frameHeight="870" />
+<SubTexture name="hhgreggPixel idle0002" x="1024" y="0" width="512" height="870" frameX="0" frameY="0" frameWidth="512" frameHeight="870" />
+<SubTexture name="hhgreggPixel idle0003" x="1536" y="0" width="512" height="870" frameX="0" frameY="0" frameWidth="512" frameHeight="870" />
+<SubTexture name="hhgreggPixel idle0004" x="0" y="870" width="512" height="870" frameX="0" frameY="0" frameWidth="512" frameHeight="870" />
+<SubTexture name="hhgreggPixel sing down0000" x="512" y="870" width="512" height="870" frameX="0" frameY="0" frameWidth="512" frameHeight="870" />
+<SubTexture name="hhgreggPixel sing down0001" x="1024" y="870" width="512" height="870" frameX="0" frameY="0" frameWidth="512" frameHeight="870" />
+<SubTexture name="hhgreggPixel sing left0000" x="1536" y="870" width="512" height="870" frameX="0" frameY="0" frameWidth="512" frameHeight="870" />
+<SubTexture name="hhgreggPixel sing left0001" x="0" y="1740" width="512" height="870" frameX="0" frameY="0" frameWidth="512" frameHeight="870" />
+<SubTexture name="hhgreggPixel sing right0000" x="512" y="1740" width="512" height="870" frameX="0" frameY="0" frameWidth="512" frameHeight="870" />
+<SubTexture name="hhgreggPixel sing right0001" x="1024" y="1740" width="512" height="870" frameX="0" frameY="0" frameWidth="512" frameHeight="870" />
+<SubTexture name="hhgreggPixel sing up0000" x="1536" y="1740" width="512" height="870" frameX="0" frameY="0" frameWidth="512" frameHeight="870" />
+<SubTexture name="hhgreggPixel sing up0001" x="0" y="2610" width="512" height="870" frameX="0" frameY="0" frameWidth="512" frameHeight="870" />
+</TextureAtlas>
