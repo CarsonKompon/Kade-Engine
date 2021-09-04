@@ -42,6 +42,18 @@ class Stage
 						bg.active = false;
 						toAdd.push(bg);
 					}
+			case 'bgHhgreggPixel':
+				{
+					//defaultCamZoom = 0.9;
+					curStage = 'bgHhgreggPixel';
+
+					var bg:FlxSprite = new FlxSprite(-850, -500).loadGraphic(Paths.image('bgHhgreggPixel'));
+					bg.antialiasing = false;
+					bg.scrollFactor.set(0.9,0.9);
+					bg.scale.set(0.7,0.7);
+					bg.active = false;
+					toAdd.push(bg);
+				}
             case 'halloween':
 					{
 						halloweenLevel = true;
