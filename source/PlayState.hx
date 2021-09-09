@@ -610,6 +610,10 @@ class PlayState extends MusicBeatState
 						tweenCamIn();
 					}
 
+				case "hhgregg":
+					dad.y -= 70;
+				case "hhgreggPixel":
+					dad.y -= 70;
 				case "spooky":
 					dad.y += 200;
 				case "monster":
@@ -654,6 +658,13 @@ class PlayState extends MusicBeatState
 			if (!PlayStateChangeables.Optimize)
 				switch (Stage.curStage)
 				{
+					case 'bgHhgregg':
+						boyfriend.y += 20;
+					case 'bgHhgreggPixel':
+						boyfriend.x += 180;
+						gf.x += 180;
+						boyfriend.y += 180;
+						gf.y += 310;
 					case 'limo':
 						boyfriend.y -= 220;
 						boyfriend.x += 260;

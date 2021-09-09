@@ -38,6 +38,27 @@ class Stage
 
 		switch (daStage)
 		{
+			case 'bgHhgregg':
+				{
+					curStage = 'bgHhgregg';
+
+					var bg:FlxSprite = new FlxSprite(-850, -500).loadGraphic(Paths.image('bgHhgregg'));
+					bg.antialiasing = FlxG.save.data.antialiasing;
+					bg.scrollFactor.set(0.9,0.9);
+					bg.scale.set(0.7,0.7);
+					bg.active = false;
+					toAdd.push(bg);
+				}
+			case 'bgHhgreggPixel':
+				{
+					curStage = 'bgHhgreggPixel';
+					var bg:FlxSprite = new FlxSprite(-850, -500).loadGraphic(Paths.image('bgHhgreggPixel'));
+					bg.antialiasing = false;
+					bg.scrollFactor.set(0.9,0.9);
+					bg.scale.set(0.7,0.7);
+					bg.active = false;
+					toAdd.push(bg);
+				}
 			case 'halloween':
 				{
 					halloweenLevel = true;
