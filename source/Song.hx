@@ -64,6 +64,7 @@ class Song
 		this.notes = notes;
 		this.bpm = bpm;
 	}
+	
 
 	public static function loadFromJsonRAW(rawJson:String)
 	{
@@ -75,6 +76,7 @@ class Song
 	
 		return parseJSONshit(rawJson);
 	}
+	
 
 	public static function loadFromJson(jsonInput:String, ?folder:String):SwagSong
 	{
@@ -83,6 +85,7 @@ class Song
 		switch (folderLowercase) {
 			case 'dad-battle': folderLowercase = 'dadbattle';
 			case 'philly-nice': folderLowercase = 'philly';
+			case 'm.i.l.f': folderLowercase = 'milf';
 		}
 		
 		trace('loading ' + folderLowercase + '/' + jsonInput.toLowerCase());
@@ -138,6 +141,12 @@ class Song
 
 		song.eventObjects = convertedStuff;
 
+		if (song.noteStyle == null)
+			song.noteStyle = "normal";
+
+		if (song.gfVersion == null)
+			song.gfVersion = "gf";
+		
 
 		TimingStruct.clearTimings();
         
@@ -216,9 +225,9 @@ class Song
 		for (section in swagShit.notes) 
 		{
 			if (section.altAnim)
-				section.p1AltAnim = section.altAnim;
+				section.CPUAltAnim = section.altAnim;
 		}
 
-		return swagShit;
+		return Song.conversionChecks(swagShit);
 	}
 }
