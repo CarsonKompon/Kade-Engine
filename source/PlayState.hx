@@ -4748,6 +4748,11 @@ class PlayState extends MusicBeatState
 				gf.dance();
 			}
 
+			if (curBeat % 8 == 7 && (curBeat == 15 || curBeat == 31 || curBeat == 63 || curBeat == 95) && curSong == 'Bomb Sniffing Bopeebo')
+			{
+				boyfriend.playAnim('hey', true);
+			}
+
 			if (curBeat % 8 == 7 && curSong == 'Bopeebo')
 			{
 				boyfriend.playAnim('hey', true);
